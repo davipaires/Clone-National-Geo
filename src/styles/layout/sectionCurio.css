@@ -34,6 +34,29 @@
     text-indent: 40px;
 }
 
+/* Inserindo manipulação do JavaScript */
+
+[data-accordion="accordion"] dd {
+    display: none;
+}
+
+[data-accordion="accordion"] dd.ativo {
+    display: block;
+    animation: anima-curiosidades 0.9s forwards;
+}
+
+[data-accordion="accordion"] dt::after {
+    content: "⬎";
+    margin-left: 10px;
+}
+
+[data-accordion="accordion"] dt.ativo::after {
+    content: "⬏";
+    margin-left: 10px;
+}
+
+
+
 /* Responsicidade */
 @media(max-width: 650px){
     .list-curiosidades {
