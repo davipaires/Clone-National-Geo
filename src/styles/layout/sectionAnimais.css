@@ -50,7 +50,7 @@
 /* Codificação de manipulação do Js */
 
 [data-tab="description"] section{
-display: none;
+ display: none; 
 }
 
 [data-tab="description"] section.ativo{
@@ -63,7 +63,7 @@ display: none;
     animation: anima-right .7s forwards;
 }
 
-@keyframes anima-curiosidades {
+@keyframes anima-right /* anima-curiosidades */ {
     from{
         opacity: 0;
         transform: translate3d(30px, 0, 0); /* Horizontal, vertical, controlar a movimentação 3d */
