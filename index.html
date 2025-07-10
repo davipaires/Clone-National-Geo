@@ -15,10 +15,18 @@
                 <img src="src/assets/images/Logo.png" alt="">
             </div>
             <nav>
-                <ul>
+                <ul data-menu="list">
                     <li><a href="#animais">animais</a></li>
                     <li><a href="#curiosidades">curiosidades</a></li>
-                    <li><a href="#">sobre</a></li>
+                    <li data-dropMenu="menuDrop">
+                        <a href="#">sobre</a>
+                        <ul class="drop-down-menu">
+                            <li><a href="">Empresa</a></li>
+                            <li><a href="">Equipe</a></li>
+                            <li><a href="">Serviços</a></li>
+                            <li><a href="">Parceiros</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contatos">contato</a></li>
                     <li><a href="#">login ⇨</a></li>
                 </ul>
@@ -151,6 +159,32 @@
         </section>
         <!-- Fim segunda sessão -->
 
+        <!-- Inicio Slider -->
+        <div class="box-slider grid-section">
+            <button class="preview arrow">⏴</button>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="src/assets/images/foto1.jpg" alt="Foto da Raposa"></div>
+                    <div class="slide"><img src="src/assets/images/foto2.jpg" alt="Foto do Esquilo"></div>
+                    <div class="slide"><img src="src/assets/images/foto3.jpg" alt="Foto do Urso"></div>
+                    <div class="slide"><img src="src/assets/images/foto4.jpg" alt="Foto do Lobo"></div>
+                    <div class="slide"><img src="src/assets/images/foto5.jpg" alt="Foto do Babuino"></div>
+                    <div class="slide"><img src="src/assets/images/foto6.jpg" alt="Foto do Leão"></div>
+                </div>
+            </div>
+            <button class="next arrow">⏵</button>
+        </div>
+        <div class="dots grid-section">
+            <div class="dot ativo"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+
+        </div>
+
+               <!-- Fim Slider -->
         <!-- Início terceira sessão -->
          <section class="section-three grid-section" id="contatos">
             <h1 class="titulos">contato</h1>
