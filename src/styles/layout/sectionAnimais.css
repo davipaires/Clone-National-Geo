@@ -50,7 +50,7 @@
 /* Codificação de manipulação do Js */
 
 [data-tab="description"] section{
-display: none;
+ display: none; 
 }
 
 [data-tab="description"] section.ativo{
